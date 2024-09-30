@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/custom_style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
@@ -16,303 +16,78 @@
 
 <body>
     <main>
-        <div class="container">
-            <div class="text-center bg-secondary mt-3"> Vidéo à la demande </div>
+        <div
+            class="container mt-5 px-4 py-2 bg-secondary d-flex align-items-center justify-content-center justify-content-md-start">
+            <img src="images/Logo_Just_Stream_It.png" alt="Logo JustStreamIt" class="custom-image">
+            <h1 class="text-white d-none d-md-block ms-4 ms-lg-5"> Vidéos à la demande </h1>
         </div>
         <div class="container best-movie">
             <h1 class="h1 my-3">Meilleur Film</h1>
             <div class="container border border-5 border-black py-2">
                 <div class="row">
-                    <img src="" alt="" class="col-4">
-                    <div class="col-8">
-                        <h2 class="h2 title">Titre du film</h2>
-                        <p class="description">Description du film</p>
-                        <div class="text-end">
-                            <button class="btn btn-danger film-details-button rounded-pill rounded-lg-1 px-4"
+                    <div class="col-12 col-md-3">
+                        <div class="image-container">
+                            <img src="" alt="" class="img-fluid objectfit-cover">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <h1 class="h1 title">Titre du film</h1>
+                        <p class="description fs-3">Description du film</p>
+                        <div class="text-center d-md-flex justify-content-end me-md-5">
+                            <button class="btn btn-danger film-details-button custom-border-radius px-4 py-2 fs-6"
                                 data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container category1" data-genre="sport">
-            <h1 class="h1 my-3 category-title">Catégorie 1</h1>
+        <div class="container category1" data-genre="crime">
+            <h1 class="h1 my-3 category-title text-center text-md-start">Catégorie 1</h1>
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3 movie-title">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center category-container">
+                    <!-- Content Filled in JS -->
+                </div>
+                <div class="text-center d-lg-none">
+                    <button class="btn btn-danger category-more-button rounded-pill px-6">Voir plus</button>
+                </div>
+                <div class="text-center d-lg-none">
+                    <button class="btn btn-danger category-less-button rounded-pill px-6 d-none">Voir moins</button>
                 </div>
             </div>
         </div>
         <div class="container category2" data-genre="drama">
-            <h1 class="h1 my-3 category-title">Catégorie 2</h1>
+            <h1 class="h1 my-3 category-title text-center text-md-start">Catégorie 2</h1>
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3 movie-title">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center category-container">
+                    <!-- Content Filled in JS -->
+                </div>
+                <div class="text-center d-lg-none">
+                    <button class="btn btn-danger category-more-button rounded-pill px-6">Voir plus</button>
+                </div>
+                <div class="text-center d-lg-none">
+                    <button class="btn btn-danger category-less-button rounded-pill px-6 d-none">Voir moins</button>
                 </div>
             </div>
         </div>
         <div class="container category3" data-genre="comedy">
-            <h1 class="h1 my-3 category-title">Catégorie 3</h1>
+            <h1 class="h1 my-3 category-title text-center text-md-start">Catégorie 3</h1>
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3 movie-title">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-3 category-content">
-                        <div class="ratio ratio-1x1 position-relative">
-                            <img src="" alt="" class="img-fluid objectfit-cover">
-                            <div class="position-absolute w-100 film-label py-1">
-                                <h3 class="h3 fw-bold text-white text-start mx-5 my-3">
-                                    Titre du film
-                                </h3>
-                                <div class="d-flex justify-content-end m-4">
-                                    <button class="btn film-details-button category-details-button rounded-pill px-4"
-                                        data-bs-toggle="modal" data-bs-target="#filmModal">Détails</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center category-container">
+                    <!-- Content Filled in JS -->
+                </div>
+                <div class="text-center d-lg-none">
+                    <button class="btn btn-danger category-more-button rounded-pill px-6">Voir plus</button>
+                </div>
+                <div class="text-center d-lg-none">
+                    <button class="btn btn-danger category-less-button rounded-pill px-6 d-none">Voir moins</button>
                 </div>
             </div>
         </div>
-        <div class="container mb-5">
-            <div class="row my-3 d-flex align-items-center">
-                <h1 class="col-2 h1 me-5">Autres:</h1>
-                <div class="col-2 dropdown">
-                    <button class="btn border border-2 border-black rounded-0 dropdown-toggle px-5" type="button"
+        <div class="container categoryOther mb-5">
+            <div class="row my-3 align-items-center">
+                <h1 class="col-md-2 h1 d-none d-md-block">Autres:</h1>
+                <div class="col-12 col-md-3 dropdown">
+                    <button class="btn border border-2 border-black rounded-0 dropdown-toggle px-3 w-100" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Choix de catégorie
                     </button>
@@ -321,13 +96,22 @@
                     </ul>
                 </div>
             </div>
-            <div class="container bg-secondary custom-height">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center category-container">
+                    <!-- Content Filled in JS -->
+                </div>
+                <div class="text-center d-lg-none">
+                    <button class="btn btn-danger category-more-button rounded-pill px-6 d-none">Voir plus</button>
+                </div>
+                <div class="text-center d-lg-none">
+                    <button class="btn btn-danger category-less-button rounded-pill px-6 d-none">Voir moins</button>
+                </div>
             </div>
         </div>
     </main>
     <!-- Modal -->
     <div class="modal fade" id="filmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content w-100">
                 <div class="modal-body">
                     <div class="container">

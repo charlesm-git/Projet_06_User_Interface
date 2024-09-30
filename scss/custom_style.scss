@@ -1,4 +1,6 @@
-// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "_custom_variables.scss";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 .custom-height {
     height: 150px;
@@ -10,21 +12,44 @@
 
 .film-label {
     top: 20%;
-    height: 35%;
+    height: 40%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.category-details-button {
-    background-color: #2D2C2C;
-    color: white;
+.custom-image {
+    width: 50%;
+    height: auto;
+    @include media-breakpoint-up(md){
+        width: 30%;
+    }
+    @include media-breakpoint-up(lg){
+        width: 20%;
+    }
 }
 
-.category-details-button:hover {
-    background-color: rgb(76, 76, 76);
-    color: white
+.btn-danger {
+    background-color: red;
+}
+
+.custom-film-button {
+    background-color: #2D2C2C;
+    color: white;
+
+    &:hover {
+        background-color: rgb(76, 76, 76);
+        color: white
+    }
+}
+
+.h1 {
+    font-weight: bold;
 }
 
 .dropdown {
+    .dropdown-toggle {
+        min-width: 200px;
+    }
+
     .dropdown-menu {
         max-height: 200px;
         overflow-y: auto;
@@ -35,13 +60,68 @@
         border-style: solid;
         border-width: 1px;
         border-color: black;
-    }
 
-    .dropdown-item:hover {
-        background-color: lightgray;
+        &:hover {
+            background-color: lightgray;
+        }
+
+        &.selected::after {
+            content: '\2705 ';
+        }
     }
 }
 
 .img-fluid {
     width: 100%;
+}
+
+.ratio-4x3 {
+    @include media-breakpoint-up(md) {
+        --bs-aspect-ratio: auto;
+        aspect-ratio: auto;
+        height: auto;
+    }
+}
+
+.image-container {
+    width: 100%;
+    position: relative;
+
+    // Default: 4:3 aspect ratio for smaller screens
+    &:before {
+        content: '';
+        display: block;
+        padding-top: 75%; // 4:3 aspect ratio (height is 75% of width)
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+
+    // For larger screens, remove the forced aspect ratio
+    @include media-breakpoint-up(md) {
+        &:before {
+            padding-top: 0;
+        }
+
+        img {
+            position: relative;
+            height: auto;
+        }
+    }
+}
+
+.custom-border-radius {
+    border-radius: 50rem;
+
+    @include media-breakpoint-up(lg) {
+        border-radius: 1rem;
+    }
+}
+
+.category-more-button .category-less-button {
+    padding-left: ($spacer * 5);
+    padding-right: ($spacer * 5);
 }
