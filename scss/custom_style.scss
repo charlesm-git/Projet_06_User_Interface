@@ -10,12 +10,6 @@
     object-fit: cover;
 }
 
-.film-label {
-    top: 20%;
-    height: 40%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .custom-image {
     width: 50%;
     height: auto;
@@ -39,6 +33,12 @@
         background-color: rgb(76, 76, 76);
         color: white
     }
+}
+
+.film-label {
+    top: 20%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .h1 {
