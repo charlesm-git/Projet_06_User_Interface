@@ -1,7 +1,6 @@
 # API
 OCMovies-API-fr/
 node_modules/
-images/
 
 #JSON format
 *.json
