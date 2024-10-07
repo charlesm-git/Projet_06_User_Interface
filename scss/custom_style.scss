@@ -1,10 +1,9 @@
 @import "_custom_variables.scss";
+@import "../node_modules/bootstrap/scss/functions.scss";
+@import "../node_modules/bootstrap/scss/variables.scss"; // For breakpoints
+@import "../node_modules/bootstrap/scss/mixins/breakpoints.scss";
+@import "../node_modules/bootstrap/scss/helpers/ratio.scss"; // For aspect ratios
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-
-.custom-height {
-    height: 150px;
-}
 
 .objectfit-cover {
     object-fit: cover;
@@ -13,10 +12,12 @@
 .custom-image {
     width: 50%;
     height: auto;
-    @include media-breakpoint-up(md){
+
+    @include media-breakpoint-up(md) {
         width: 30%;
     }
-    @include media-breakpoint-up(lg){
+
+    @include media-breakpoint-up(lg) {
         width: 20%;
     }
 }
