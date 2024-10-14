@@ -70,7 +70,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.h1 {
+.h2 {
   font-weight: bold;
 }
 
@@ -137,11 +137,6 @@
   .custom-border-radius {
     border-radius: 1rem;
   }
-}
-
-.category-more-button .category-less-button {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 /*# sourceMappingURL=custom_style.css.map */

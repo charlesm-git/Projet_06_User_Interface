@@ -40,7 +40,6 @@ async function fetchMovieFromID(movieID) {
     return await fetchData(url);
 }
 
-
 async function fetchAllGenresPages() {
     /* In the API, fetch all the movies genre available
     Return them as a list
@@ -60,7 +59,7 @@ async function fetchAllGenresPages() {
     return genres; // Return the combined data
 }
 
-async function builtBestMovie() {
+async function buildBestMovie() {
     // Fills the best movie category with the content of the movie with the best imdb score
     const bestMovieData = await fetchBestMovie()
     const bestMovieSelector = document.querySelector('.best-movie');
@@ -78,7 +77,6 @@ async function builtBestMovie() {
     modalWindowSetUp(bestMovieSelector)
 }
 
-
 function buildCategory(moviesData, categorySelector) {
     /* Build the HTML code for a specific category
     Hides the necessary content depending on the device size
@@ -87,7 +85,7 @@ function buildCategory(moviesData, categorySelector) {
 
     for (let j = 0; j < moviesData.length; j++) {
         const movieContent = `
-            <div class="my-3 category-content content${j}">
+            <article class="my-3 category-content content${j}">
                 <div class="ratio ratio-1x1 position-relative">
                     <img src="${moviesData[j].image_url}" alt="Cover of the movie ${moviesData[j].title}" class="img-fluid objectfit-cover">
                     <div class="position-absolute w-100 film-label py-1">
@@ -100,7 +98,7 @@ function buildCategory(moviesData, categorySelector) {
                         </div>
                     </div>
                 </div>
-            </div>`;
+            </article>`;
         categoryContainer.insertAdjacentHTML('beforeend', movieContent);
         let categoryContent = categoryContainer.querySelector(`.content${j}`);
         switch (j) {
@@ -245,7 +243,7 @@ function lessButtonSetUp(categorySelector) {
 }
 
 async function initialisationApp() {
-    await builtBestMovie()
+    await buildBestMovie()
     await buildCategories()
     await buildOtherCategory()
 }

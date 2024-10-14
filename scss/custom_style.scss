@@ -1,4 +1,3 @@
-@import "_custom_variables.scss";
 @import "../node_modules/bootstrap/scss/functions.scss";
 @import "../node_modules/bootstrap/scss/variables.scss"; // For breakpoints
 @import "../node_modules/bootstrap/scss/mixins/breakpoints.scss";
@@ -42,7 +41,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.h1 {
+.h2 {
     font-weight: bold;
 }
 
@@ -120,9 +119,4 @@
     @include media-breakpoint-up(lg) {
         border-radius: 1rem;
     }
-}
-
-.category-more-button .category-less-button {
-    padding-left: ($spacer * 5);
-    padding-right: ($spacer * 5);
 }
